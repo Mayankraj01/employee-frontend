@@ -1,0 +1,86 @@
+.app-container,
+.dashboard-container {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.sidebar button:hover {
+  background: #34495e;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-form input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.employee-form button {
+  padding: 8px 12px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.employee-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-list li {
+  padding: 8px;
+  background: white;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.employee-list button {
+  margin-left: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
