@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:8080/employees";
+//const API_URL = "http://localhost:8080/employees";
+const API_URL = "https://employee-backend-zs8o.onrender.com/employees";
+
 
 export const getEmployees = async () => {
   const res = await fetch(API_URL);

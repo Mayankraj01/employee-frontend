@@ -27,9 +27,9 @@ const EmployeeForm = ({ formData, setFormData, onSubmit, isEditing }) => {
       />
       <input
         type="text"
-        name="jobTitle"
+        name="department"
         placeholder="Job Title"
-        value={formData.jobTitle}
+        value={formData.department}
         onChange={handleChange}
         required
       />

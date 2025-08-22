@@ -14,7 +14,7 @@ const Employee = ({ page }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    jobTitle: "",
+    department: "",
   });
   const [editingId, setEditingId] = useState(null);
 
@@ -39,7 +39,7 @@ const Employee = ({ page }) => {
       } else {
         await addEmployee(formData);
       }
-      setFormData({ name: "", email: "", jobTitle: "" });
+      setFormData({ name: "", email: "", department: "" });
       setEditingId(null);
       loadEmployees();
     } catch (error) {

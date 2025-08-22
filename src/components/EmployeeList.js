@@ -9,7 +9,7 @@ const EmployeeList = ({ employees, onEdit, onDelete }) => (
       <ul>
         {employees.map((emp) => (
           <li key={emp.id} className="employee-item">
-            <strong>{emp.name}</strong> | {emp.email} | {emp.jobTitle}
+            <strong>{emp.name}</strong> | {emp.email} | {emp.department}|
             <button onClick={() => onEdit(emp)}>Edit</button>
             <button onClick={() => onDelete(emp.id)}>Delete</button>
           </li>
